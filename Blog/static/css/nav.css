@@ -49,6 +49,11 @@ body {
 
 }
 
+.nav-padded-lr-responsive {
+    padding-left: 4em !important;
+    padding-right: 4em !important;
+}
+
 /*margin*/
 .nav-margin-top-small {
     margin-top: 0.5em !important;
@@ -65,6 +70,10 @@ body {
 .nav-margin-tiny {
     margin-top: 0.3em !important;
     margin-bottom: 0.3em !important;
+}
+
+.nav-margin-bottom-small {
+    margin-bottom: 0.5em !important;
 }
 
 /*text*/
@@ -100,8 +109,14 @@ body {
     display: inline-block !important;
 }
 
+/*container*/
 .nav-container {
     min-width: 72em !important;
+    margin: auto !important;
+}
+
+.nav-container-small {
+    min-width: 60em !important;
     margin: auto !important;
 }
 
@@ -118,6 +133,13 @@ body {
 
 }
 
+/*shadow*/
+.nav-shadow-small{
+    -webkit-box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important; /*对某些浏览器进行适配*/
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important; /*4px: 左右 8px：虚化范围*/
+}
+
+/*mobile*/
 .nav-mobile-show {
     display:none !important;
 }
@@ -129,5 +151,19 @@ body {
 
     .nav-mobile-show {
         display:block !important;
+    }
+
+    .nav-padded-lr-responsive {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .nav-mobile-lr-clear {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .nav-mobile-wide {
+        width: 100% !important;
     }
 }

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="static/css/nav.css">
+
+</head>
+<body>
+
+    <!--navigation-->
+    <nav class="ui inverted attached segment nav-padding-tb-mini nav-shadow-small">
+        <div class="ui container">
+            <div class="ui inverted secondary stackable menu">
+                <h2 class="ui teal header item">MyBlog</h2>
+                <a href="#" class="nav-item item nav-mobile-hide"><i class="home icon"></i>Home</a>
+                <a href="#" class="nav-item item nav-mobile-hide"><i class="idea icon"></i>Class</a>
+                <a href="#" class="nav-item item nav-mobile-hide"><i class="tags icon"></i>Tag</a>
+                <a href="#" class="nav-item item nav-mobile-hide"><i class="clone icon"></i>Achieve</a>
+                <a href="#" class="active nav-item item nav-mobile-hide"><i class="info icon"></i>About</a>
+                <div class="right nav-item item nav-mobile-hide">
+                    <div class="ui icon inverted transparent input">
+                        <input type="text" placeholder="Search...">
+                        <i class="search icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="ui menu toggle black icon button nav-right-top nav-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>
+
+    </nav>
+
+    <!--content-->
+    <div class="nav-container-small nav-padding-tb-big">
+        <div class="ui container">
+            <div class="ui stackable grid">
+                <div class="eleven wide column">
+                    <img src="https://unsplash.it/800/600?image=1005" alt="" class="ui rounded image">
+                </div>
+
+                <div class="five wide column">
+                    <div class="ui top attached segment">
+                        <div class="ui header">About me</div>
+                    </div>
+
+                    <div class="ui attached segment">
+                        <p class="nav-text">Estelle</p>
+                        <p class="nav-text">Active learning web development</p>
+                    </div>
+
+                    <div class="ui attached segment">
+                        <div class="ui orange basic label nav-margin-tiny">Programming</div>
+                        <div class="ui orange basic label nav-margin-tiny">Thinking</div>
+                        <div class="ui orange basic label nav-margin-tiny">Sport</div>
+                    </div>
+
+                    <div class="ui attached segment">
+                        <div class="ui teal basic left pointing label nav-margin-tiny">Java</div>
+                        <div class="ui teal basic left pointing label nav-margin-tiny">Python</div>
+                        <div class="ui teal basic left pointing label nav-margin-tiny">C</div>
+                        <div class="ui teal basic left pointing label nav-margin-tiny">SQLite</div>
+                        <div class="ui teal basic left pointing label nav-margin-tiny">HTML</div>
+                    </div>
+
+                    <div class="ui bottom attached segment">
+                        <a href="#" class="ui github circular icon button"><i class="github icon"></i></a>
+                        <a href="#" class="ui wechat circular icon button"><i class="weixin icon"></i></a>
+                        <a href="#" class="ui qq circular icon button" data-content="2306572080" data-position="bottom center"><i class="qq icon"></i></a>
+                    </div>
+
+                    <div class="ui wechat-qr flowing popup transition hidden">
+                        <img src="./static/images/QRCode.png" alt="" class="ui rounded image" style="width: 120px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--footer-->
+    <footer class="ui inverted vertical segment nav-padding-tb-massive">
+        <div class="ui center aligned container">
+            <div class="ui inverted divided stackable grid"> <!--分成16份-->
+                <div class="three wide column">
+                    <div class="ui inverted link list">
+                        <div class="item">
+                            <img src="./static/images/QRCode.png" class="ui rounded image" alt="WeChat" style="width: 110px">
+                        </div>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header nav-text-thin nav-text-spaced">Recent Blog</h4>
+                    <div class="ui inverted linked list">
+                        <a href="#" class="item">User story</a>
+                    </div>
+                </div>
+                <div class="four wide column">
+                    <h4 class="ui inverted header nav-text-thin nav-text-spaced">Contact me</h4>
+                    <div class="ui inverted linked list">
+                        <a href="#" class="item">Email: noglues666@gmail.com</a>
+                    </div>
+                </div>
+                <div class="six wide column">
+                    <h4 class="ui inverted header nav-text-thin nav-text-spaced">Blog</h4>
+                    <p class="nav-text-thin nav-text-spaced nav-opacity-mini">This is my first web development.</p>
+                </div>
+            </div>
+
+            <div class="ui inverted section divider"></div>
+
+            <p class="nav-text-thin nav-text-spaced nav-opacity-tiny">Copyright © 2020-2021 MyBlog Designed by Estelle </p>
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+    <script>
+        $('.menu.toggle').click(function() {
+            $('.nav-item').toggleClass('nav-mobile-hide');
+        });
+
+        $('.wechat').popup({
+            popup : $('.wechat-qr'),
+            position: 'bottom center'
+        });
+
+        $('.qq').popup()
+    </script>
+</body>
+</html>
