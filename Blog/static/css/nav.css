@@ -2,6 +2,14 @@ body {
     background: url("../images/bg2.jpg");
 }
 
+.nav-padding-mini {
+    padding: 0.2em !important;
+}
+
+.nav-padding {
+    padding: 1em !important;
+}
+
 .nav-padding-tb-mini {
     padding-top: 0.2em !important;
     padding-bottom: 0.2em !important;
@@ -127,11 +135,24 @@ body {
 
 /*position*/
 .nav-right-top {
-    position: absolute;
-    top: 0;
-    right: 0;
+    position: absolute  !important;
+    top: 0  !important;
+    right: 0  !important;
 
 }
+
+.nav-right-bottom {
+    position: absolute !important;
+    bottom: 0  !important;
+    right: 0  !important;
+
+}
+
+.nav-fixed {
+    position: fixed !important;
+    z-index: 10 !important;
+}
+
 
 /*shadow*/
 .nav-shadow-small{
