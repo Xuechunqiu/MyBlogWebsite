@@ -1,0 +1,5 @@
+2020-05-03 18:00:27.447  INFO 15912 --- [restartedMain] com.lrm.blog.BlogApplication             : Starting BlogApplication on LAPTOP-HAHA with PID 15912 (E:\GitRepo\blog\target\classes started by NOGLUES in E:\GitRepo\blog)
+2020-05-03 18:00:27.451  INFO 15912 --- [restartedMain] com.lrm.blog.BlogApplication             : The following profiles are active: pro
+2020-05-03 18:00:30.806  WARN 15912 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-03 18:00:31.107  WARN 15912 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-05-03 18:00:31.523  INFO 15912 --- [restartedMain] com.lrm.blog.BlogApplication             : Started BlogApplication in 4.918 seconds (JVM running for 6.611)
