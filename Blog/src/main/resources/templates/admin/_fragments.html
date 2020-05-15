@@ -6,10 +6,6 @@
     <title th:replace="${title}">Blog Detail</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
-    <link rel="stylesheet" href="../static/css/typo.css" th:href="@{/css/typo.css}">
-    <link rel="stylesheet" href="../static/css/animate.css" th:href="@{/css/animate.css}">
-    <link rel="stylesheet" href="../static/lib/prism/prism.css" th:href="@{/lib/prism/prism.css}">
-    <link rel="stylesheet" href="../static/lib/tocbot/tocbot.css" th:href="@{/lib/tocbot/tocbot.css}">
     <link rel="stylesheet" href="../static/css/nav.css" th:href="@{/css/nav.css}">
 
 </head>
@@ -22,7 +18,7 @@
             <div class="ui inverted secondary stackable menu">
                 <h2 class="ui teal header item">Background Management</h2>
                 <a href="#" th:href="@{/admin/blogs}" class="nav-item item nav-mobile-hide" th:classappend="${n==1} ? 'active'"><i class="home icon"></i>Home</a>
-                <a href="#" th:href="@{/admin/types}" class="nav-item item nav-mobile-hide" th:classappend="${n==2} ? 'active'"><i class="idea icon"></i>Class</a>
+                <a href="#" th:href="@{/admin/types}" class="nav-item item nav-mobile-hide" th:classappend="${n==2} ? 'active'"><i class="idea icon"></i>Type</a>
                 <a href="#" th:href="@{/admin/tags}" class="nav-item item nav-mobile-hide" th:classappend="${n==3} ? 'active'"><i class="tags icon"></i>Tag</a>
                 <div class="right nav-item nav-mobile-hide menu">
                     <div class="ui dropdown item">
@@ -85,10 +81,6 @@
 <th:block th:fragment="script">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
-    <script src="../static/lib/prism/prism.js" th:src="@{/lib/prism/prism.js}"></script>
-    <script src="../static/lib/tocbot/tocbot.min.js" th:src="@{/lib/tocbot/tocbot.min.js}"></script>
-    <script src="../static/lib/qrcode/qrcode.min.js" th:src="@{/lib/qrcode/qrcode.min.js}"></script>
 </th:block>
 
 </body>
